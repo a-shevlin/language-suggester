@@ -8,28 +8,25 @@ $(document).ready(function() {
     const toDo = parseInt($("#toDo").val());
     const all = age + color + place + toDo;
 
-    if (all >= 1 && all < 400) {
+    if (all >= 1 && all < 100) {
       $("#html").show();
       $("#rust").hide();
       $("#python").hide();
       $("#ruby").hide();
       $("#quiz").fadeToggle();
-
-    } else if (all >= 400 && all < 500) {
+    } else if (all >= 101 && all < 200) {
       $("#html").hide();
       $("#rust").show();
       $("#python").hide();
       $("#ruby").hide();
       $("#quiz").fadeToggle();
-      
-    } else if (all >=500 && all < 600) {
+    } else if (all >=201 && all < 300) {
       $("#html").hide();
       $("#rust").hide();
       $("#python").show();
       $("#ruby").hide();
       $("#quiz").fadeToggle();
-      
-    } else { 
+    } else {
       $("#html").hide();
       $("#rust").hide();
       $("#python").hide();
@@ -37,5 +34,6 @@ $(document).ready(function() {
       $("#quiz").fadeToggle();
     }
 
-  })
-})
+    $(".yourName").text(name);
+  });
+});
