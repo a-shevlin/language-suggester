@@ -15,11 +15,91 @@
     <form id="quiz">
       <div class="quizQuestions">
         <div id="qOne">
-        <h3><em>What is your name?</em></h3>
-        <input id="name" class="form-control" type="text" required>
+          <h3>What is your <em>name</em>?</h3>
+          <input id="name" class="form-control" type="text" required>
+        </div>
+        <div id="qTwo">
+          <h3>What is your <em>age</em>?</h3>
+          <input id="age" class="form-control" type="number" required>
+        </div>
+        <div id="qThree">
+          <h3>Which is a <em>better</em>?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="1" checked>
+              Blue
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="25">
+              Red
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="50">
+              Lime Green
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="80">
+              Kia Soul Yellow
+            </label>
+          </div>
+        </div>
+        <div id="qFour">
+          <h3>What is your <em>favorite</em> place?</h3>
+          <select id="place" class="form-control">
+            <option value="25">The Beach</option>
+            <option value="80">The City</option>
+            <option value="50">The Woods</option>
+            <option value="1">Inside</option>
+          </select>
+        </div>
+        <div id="qFive">
+          <h3>What would you <em>prefer</em> to do?</h3>
+          <select id="toDo" class="form-control">
+            <option value="50">Watch a Movie</option>
+            <option value="1">Hang Out With Friends</option>
+            <option value="25">Read a Book</option>
+            <option value="80">Play Video Games</option>
+          </select>
         </div>
       </div>
+      <button type="submit" class="btn-lg" id="submit">Submit!</button>
     </form>
+
+    <div class="quizAnswers">
+      <div id="html">
+        <h2><span class="yourName"> you should learn HTML!</span></h2>
+        <p>You seem interested to get started in programming! A great place to start is with building webpages. If you're feeling like a little more excitement is necessary you can add some CSS to your projects.</p>
+        <ul>
+          <li>Click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" alt="Link to MDN page on HTML">here</a> to learn more about HTML.</li>
+          <li>Click <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" alt="Link to MDN page on HTML">here</a> to learn more about CSS</li>
+        </ul>
+      </div>
+      <div id="rust">
+        <h2><span class="yourName"> you should learn Rust!</span></h2>
+        <p>Rust is a great general-purpose language. If you decided to start programming with Rust you would find it similar to C and C++ making those languages easier to understand. It has been voted the most-loved programming language on Stack Overflow since 2016.</p>
+        <ul>
+          <li>Click <a href="https://www.rust-lang.org/" target="_blank" alt="Link to Rust's main-page for their website">here</a> to learn more about Rust.</li>
+          <li>Click <a href="https://discord.com/blog/why-discord-is-switching-from-go-to-rust" target="_blank" alt="Link to Discord blog entry">here</a> to learn more about why Discord is switching to Rust from Go.</li>
+        </ul>
+      </div>
+      <div id="python">
+        <h2><span class="yourName"> you should learn Python!</span></h2>
+      </div>
+      <div id="ruby">
+        <h2><span class="yourName"> you should learn Ruby!</span></h2>
+        <p>You seem most compatible with Ruby. It's great for building applications and automation. With the help of Ruby on Rails you can make complex front-end and back-end web development and data processing. It's a very flexible language that allows developers to alter how the language works.</p>
+        <ul>
+          <li>Click <a href="https://www.ruby-lang.org/en/about/" target="_blank" alt="Link to Ruby's about page for their website">here</a> to learn more about Ruby.</li>
+          <li>Click <a href="https://www.codecademy.com/resources/blog/what-is-ruby-used-for/" target="_blank" alt="Link to codecademy blog on Ruby">here</a> for more information on how to use ruby.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>
