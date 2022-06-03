@@ -1,3 +1,15 @@
-.quizAnswers {
+#html {
+  display: none;
+}
+
+#rust {
+  display: none;
+}
+
+#python {
+  display: none;
+}
+
+#ruby {
   display: none;
 }
