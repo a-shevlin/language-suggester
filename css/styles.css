@@ -1,3 +1,23 @@
+body {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(#5272c4, #65e6f3);
+  font-family: impact;
+}
+
+.jumbotron {
+  background-color: #364461;
+  color: rgb(207, 248, 248);
+  text-shadow: -3px 3px 5px black;
+  border:5px solid#928bd3;
+  box-shadow: ;
+}
+
+h3 {
+  font-family: tahoma;
+  font-weight: 600px;
+
+}
 #html {
   display: none;
 }

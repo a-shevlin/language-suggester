@@ -9,19 +9,19 @@ $(document).ready(function() {
     const all = age + color + place + toDo;
     console.log(all);
 
-    if (all >= 1 && all < 100) {
+    if (all >= 1 && all < 60) {
       $("#html").show();
       $("#rust").hide();
       $("#python").hide();
       $("#ruby").hide();
       $("#quiz").fadeToggle();
-    } else if (all >= 101 && all < 200) {
+    } else if (all >= 60 && all < 100) {
       $("#html").hide();
       $("#rust").show();
       $("#python").hide();
       $("#ruby").hide();
       $("#quiz").fadeToggle();
-    } else if (all >=201 && all < 300) {
+    } else if (all >=100 && all < 160) {
       $("#html").hide();
       $("#rust").hide();
       $("#python").show();

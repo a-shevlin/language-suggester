@@ -3,6 +3,7 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Programming Language Quiz</title>
@@ -15,67 +16,88 @@
     <form id="quiz">
       <div class="quizQuestions">
         <div id="qOne">
-          <h3>What is your <em>name</em>?</h3>
-          <input id="name" class="form-control" type="text" required>
+          <div class="row">
+            <div class="col-12">
+              <h3>What is your <em>name</em>?</h3>
+              <input id="name" class="form-control" type="text" placeholder="Your name here!" required>
+            </div>
+          </div>
         </div>
         <div id="qTwo">
-          <h3>What is your <em>age</em>?</h3>
-          <select id="age" class="form-control">
-            <option value="1">0-20</option>
-            <option value="10">21-40</option>
-            <option value="20">41-60</option>
-            <option value="40">60-100</option>
+          <div class="row">
+            <div class="col-12">
+              <h3>What is your <em>age</em>?</h3>
+              <select id="age" class="form-control">
+                <option value="0">Select a range!</option>
+                <option value="1">0-20</option>
+                <option value="10">21-40</option>
+                <option value="20">41-60</option>
+                <option value="40">60-100</option>
+            </div>
+          </div>
         </div>
         <div id="qThree">
           <h3>Which is a <em>better</em>?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="1" checked>
-              Blue
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="25">
-              Red
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="50">
-              Lime Green
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="80">
-              Kia Soul Yellow
-            </label>
+          <div class="row">
+            <div class="col-12">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="1" checked>
+                  Blue
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="25">
+                  Red
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="50">
+                  Lime Green
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="80">
+                  Kia Soul Yellow
+                </label>
+              </div>
+            </div>
           </div>
         </div>
         <div id="qFour">
-          <h3>What is your <em>favorite</em> place?</h3>
-          <select id="place" class="form-control">
-            <option value="25">The Beach</option>
-            <option value="80">The City</option>
-            <option value="50">The Woods</option>
-            <option value="1">Inside</option>
-          </select>
+          <div class="row">
+            <div class="col-12">
+              <h3>What is your <em>favorite</em> place?</h3>
+              <select id="place" class="form-control">
+                <option value="25">The Beach</option>
+                <option value="80">The City</option>
+                <option value="50">The Woods</option>
+                <option value="1">Inside</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div id="qFive">
-          <h3>What would you <em>prefer</em> to do?</h3>
-          <select id="toDo" class="form-control">
-            <option value="50">Watch a Movie</option>
-            <option value="1">Hang Out With Friends</option>
-            <option value="25">Read a Book</option>
-            <option value="80">Play Video Games</option>
-          </select>
+          <div class="row">
+            <div class="col-12">
+              <h3>What would you <em>prefer</em> to do?</h3>
+              <select id="toDo" class="form-control">
+                <option value="50">Watch a Movie</option>
+                <option value="1">Hang Out With Friends</option>
+                <option value="25">Read a Book</option>
+                <option value="80">Play Video Games</option>
+              </select>
+            </div>
+          </div>
         </div>
+        <button type="submit" class="btn-lg" id="submit">Submit!</button>
       </div>
-      <button type="submit" class="btn-lg" id="submit">Submit!</button>
     </form>
 
-    <div class="quizAnswers">
+    <div class="quizAnswers container">
       <div id="html">
         <h2><span class="yourName"></span> you should learn HTML!</h2>
         <p>You seem interested to get started in programming! A great place to start is with building webpages. If you're feeling like a little more excitement is necessary you can add some CSS to your projects.</p>
@@ -83,6 +105,7 @@
           <li>Click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" alt="Link to MDN page on HTML">here</a> to learn more about HTML.</li>
           <li>Click <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" alt="Link to MDN page on HTML">here</a> to learn more about CSS</li>
         </ul>
+        <button class="refresh" onClick="window.location.reload()" class="button">Retake the quiz!</button>
       </div>
       <div id="rust">
         <h2><span class="yourName"></span> you should learn Rust!</h2>
@@ -91,6 +114,7 @@
           <li>Click <a href="https://www.rust-lang.org/" target="_blank" alt="Link to Rust's main-page for their website">here</a> to learn more about Rust.</li>
           <li>Click <a href="https://discord.com/blog/why-discord-is-switching-from-go-to-rust" target="_blank" alt="Link to Discord blog entry">here</a> to learn more about why Discord is switching to Rust from Go.</li>
         </ul>
+        <button class="refresh" onClick="window.location.reload()" class="button">Retake the quiz!</button>
       </div>
       <div id="python">
         <h2><span class="yourName"></span> you should learn Python!</h2>
@@ -98,6 +122,7 @@
         <ul>
           <li>Click <a href="https://www.python.org/about/gettingstarted/" target="_blank" alt="Link to python for beginners page.">here </a> to learn more about python.</li>
         </ul>
+        <button class="refresh" onClick="window.location.reload()" class="button">Retake the quiz!</button>
       </div>
       <div id="ruby">
         <h2><span class="yourName"></span> you should learn Ruby!</h2>
@@ -106,6 +131,7 @@
           <li>Click <a href="https://www.ruby-lang.org/en/about/" target="_blank" alt="Link to Ruby's about page for their website">here</a> to learn more about Ruby.</li>
           <li>Click <a href="https://www.codecademy.com/resources/blog/what-is-ruby-used-for/" target="_blank" alt="Link to codecademy blog on Ruby">here</a> for more information on how to use ruby.</li>
         </ul>
+        <button class="refresh" onClick="window.location.reload()" class="button">Retake the quiz!</button>
       </div>
     </div>
   </div>
