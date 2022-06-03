@@ -3,7 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     const name = $("input#name").val();
     const age = parseInt($("#age").val());
-    const color = parseInt($("input:radio[name=color]:checked").val());
+    const color = parseInt($("#color").val());
     const place = parseInt($("#place").val());
     const toDo = parseInt($("#toDo").val());
     const all = age + color + place + toDo;

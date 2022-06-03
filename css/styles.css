@@ -1,4 +1,4 @@
-body {
+body:not {
   position: relative;
   height: 100vh;
   background-image: url(../img/background.png), linear-gradient(#5272c4, #65e6f3);
