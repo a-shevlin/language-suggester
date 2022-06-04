@@ -213,9 +213,7 @@ col-12 {
 }
 
 #qOne {
-  display: flex;
   box-sizing: border-box;
-  content: flex;
   width: 25vw;
   min-width: 350px; 
   min-height: 11vh;
@@ -279,6 +277,7 @@ col-12 {
 }
 
 #qThree h3 {
+  color: rgb(49, 49, 53);
   padding-left: 30px;
 }
 
@@ -298,7 +297,7 @@ col-12 {
 }
 
 #qFour h3 {
-  left: 50px;
+  color: rgb(49, 49, 53);
 }
 
 #qFour select {
@@ -312,7 +311,7 @@ col-12 {
   width: 25vw;
   min-width: 350px;
   min-height: 11vh;
-  background-color: rgba(197, 220, 226, 0.425);
+  background-color: rgba(197, 220, 226, 0.534);
   border: 5px inset rgba(85, 65, 117, 0.7);
   border-radius: 100px;
   padding: 10px;
@@ -328,6 +327,10 @@ col-12 {
   left: 45px;
 }
 
+#qFive h3 {
+  color: rgb(49, 49, 53);
+}
+
 .btn-lg {
   background-color: rgba(197, 220, 226, 0.425);
   border: 5px inset rgba(85, 65, 117, 0.7);
@@ -338,37 +341,76 @@ col-12 {
 
 #html {
   display: none;
-  background-color: rgb(239, 221, 255);
+  box-sizing: border-box;
+  width: 25vw;
+  min-width: 350px; 
+  min-height: 11vh;
+  background-color: rgba(221, 235, 255, 0.61);
   border: 5px inset rgba(85, 65, 117, 0.7);
+  border-radius: 100px;
   padding: 10px;
-  margin-bottom: 5px;
-  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562);
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 17vw;
+  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562),  -10px 2px 10px 5px inset rgba(78, 95, 114, 0.452);
 }
 
 #rust {
   display: none;
-  background-color: rgb(239, 221, 255);
+  box-sizing: border-box;
+  width: 25vw;
+  min-width: 350px; 
+  min-height: 11vh;
+  background-color: rgba(221, 235, 255, 0.61);
   border: 5px inset rgba(85, 65, 117, 0.7);
+  border-radius: 100px;
   padding: 10px;
-  margin-bottom: 5px;
-  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562);
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 17vw;
+  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562),  -10px 2px 10px 5px inset rgba(78, 95, 114, 0.452);
 }
 
 #python {
   display: none;
-  background-color: rgb(239, 221, 255);
+  box-sizing: border-box;
+  width: 25vw;
+  min-width: 350px; 
+  min-height: 11vh;
+  background-color: rgba(221, 235, 255, 0.61);
   border: 5px inset rgba(85, 65, 117, 0.7);
+  border-radius: 100px;
   padding: 10px;
-  margin-bottom: 5px;
-  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562);
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 17vw;
+  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562),  -10px 2px 10px 5px inset rgba(78, 95, 114, 0.452);
 }
 
 #ruby {
   display: none;
-  background-color: rgb(239, 221, 255);
+  box-sizing: border-box;
+  width: 25vw;
+  min-width: 350px; 
+  min-height: 11vh;
+  background-color: rgba(221, 235, 255, 0.61);
   border: 5px inset rgba(85, 65, 117, 0.7);
+  border-radius: 100px;
   padding: 10px;
-  margin-bottom: 5px;
-  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562);
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 17vw;
+  box-shadow:  -30px 10px 20px 10px rgba(82, 114, 196, 0.562),  -10px 2px 10px 5px inset rgba(78, 95, 114, 0.452);
+}
+
+.refresh {
+  background-color: rgba(197, 220, 226, 0.425);
+  border: 5px inset rgba(85, 65, 117, 0.7);
+  border-radius: 100px;
+  box-shadow: -10px 2px 10px 5px inset rgba(78, 106, 114, 0.651);
 }
 
