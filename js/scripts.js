@@ -7,7 +7,6 @@ $(document).ready(function() {
     const place = parseInt($("#place").val());
     const toDo = parseInt($("#toDo").val());
     const all = age + color + place + toDo;
-    console.log(all);
 
     if (all >= 1 && all < 60) {
       $("#html").show();
