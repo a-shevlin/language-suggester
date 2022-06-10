@@ -8,6 +8,7 @@ $(document).ready(function() {
     const toDo = parseInt($("#toDo").val());
     const all = age + color + place + toDo;
 
+    
     if (all >= 1 && all < 60) {
       $("#html").show();
       $("#rust").hide();
